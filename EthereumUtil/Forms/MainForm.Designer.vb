@@ -33,7 +33,7 @@ Partial Class MainForm
         Me.btnStructUint.Name = "btnStructUint"
         Me.btnStructUint.Size = New System.Drawing.Size(553, 62)
         Me.btnStructUint.TabIndex = 0
-        Me.btnStructUint.Text = "Struct first, uint second."
+        Me.btnStructUint.Text = "Struct[] first, uint second."
         Me.btnStructUint.UseVisualStyleBackColor = True
         '
         'btnUintStruct
@@ -42,7 +42,7 @@ Partial Class MainForm
         Me.btnUintStruct.Name = "btnUintStruct"
         Me.btnUintStruct.Size = New System.Drawing.Size(553, 62)
         Me.btnUintStruct.TabIndex = 1
-        Me.btnUintStruct.Text = "Uint first, struct second."
+        Me.btnUintStruct.Text = "Uint first, struct[] second."
         Me.btnUintStruct.UseVisualStyleBackColor = True
         '
         'btnTwoStructUint
@@ -51,7 +51,7 @@ Partial Class MainForm
         Me.btnTwoStructUint.Name = "btnTwoStructUint"
         Me.btnTwoStructUint.Size = New System.Drawing.Size(553, 62)
         Me.btnTwoStructUint.TabIndex = 2
-        Me.btnTwoStructUint.Text = "Struct[] first, uint second."
+        Me.btnTwoStructUint.Text = "Two Struct[], uint second."
         Me.btnTwoStructUint.UseVisualStyleBackColor = True
         '
         'MainForm
