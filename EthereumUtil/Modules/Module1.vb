@@ -22,22 +22,22 @@ Module Module1
         Dim contractAddress As String
         Select Case testCase
             Case 1
-                ' code:
-                contractAddress = "0xc6cf0f044ba8ea402bfedf9e87b88bf1c008d162" ' struct first, uint second
+                ' code: https://gist.github.com/Enigmatic331/74cc6fe53817590d9348bd94e91b948b
+                contractAddress = "0xc6cf0f044ba8ea402bfedf9e87b88bf1c008d162" ' struct array first, uint second
                 Dim contract = iweb3.Eth.GetContractHandler(contractAddress)
                 gas = Await contract.EstimateGasAsync(Of GetNestedStructFirstUintSecond)
                 Dim getResult = Await contract.QueryDeserializingToObjectAsync(Of GetNestedStructFirstUintSecond, NestedStructFirstUintSecond)
                 Console.WriteLine("Done GetNestedStructFirstUintSecond Example.")
             Case 2
-                ' code: 
-                contractAddress = "0x8242ad7e961000388324eb87271205a03f40096e" ' uint first, struct second
+                ' code: https://gist.github.com/Enigmatic331/9c44691b8391f151ea9a7dc648fde4cd
+                contractAddress = "0x8242ad7e961000388324eb87271205a03f40096e" ' uint first, struct array second
                 Dim contract = iweb3.Eth.GetContractHandler(contractAddress)
                 gas = Await contract.EstimateGasAsync(Of GetUintFirstNestedStructSecond)
                 Dim getResult = Await contract.QueryDeserializingToObjectAsync(Of GetUintFirstNestedStructSecond, UintFirstNestedStructSecond)
                 Console.WriteLine("Done GetUintFirstNestedStructSecond Example.")
             Case 3
-                ' code: 
-                contractAddress = "0x85cc65ce9a14c6c23abacf7a75e274e05e54347c" ' struct with two structs and a uint256
+                ' code: https://gist.github.com/Enigmatic331/052357d06e684dc64f03dd2dea5a40cf
+                contractAddress = "0x85cc65ce9a14c6c23abacf7a75e274e05e54347c" ' struct with two struct arrays and a uint256
                 Dim contract = iweb3.Eth.GetContractHandler(contractAddress)
                 gas = Await contract.EstimateGasAsync(Of GetTwoNestedStructAndUintLast)
                 Dim getResult = Await contract.QueryDeserializingToObjectAsync(Of GetTwoNestedStructAndUintLast, TwoNestedStructAndUintLast)
