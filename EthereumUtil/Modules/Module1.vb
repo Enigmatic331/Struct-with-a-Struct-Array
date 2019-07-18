@@ -94,8 +94,6 @@ Module Module1
 
         <[Parameter]("tuple[]", "arrIntRP", 1)>
         Public Overridable Property arrIntRP As List(Of internalRiskParams)
-        '<[Parameter]("tuple[]", "internalRiskParamsTwo", 2)>
-        'Public Overridable Property internalRiskParamsTwo As List(Of IAmPushingIt)
         <[Parameter]("uint256", "aRandomNumber", 2)>
         Public Overridable Property aRandomNumber As BigInteger
     End Class
